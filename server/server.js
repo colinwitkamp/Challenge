@@ -177,7 +177,7 @@ app.use((err, req, res, next) =>	{	// eslint-disable-line no-unused-vars
 });
 
 // start app
-app.listen(serverConfig.port, (error) => {
+app.listen('0.0.0.0', serverConfig.port, (error) => {
   if (!error) {
     console.log(`MERN is running on port: ${serverConfig.port}! Build something amazing!`); // eslint-disable-line
   }
