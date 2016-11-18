@@ -19,8 +19,8 @@ export function OfferDetailPage(props) {
       <Helmet title={props.offer.name} />
       <div className={`${styles['single-offer']} ${styles['offer-detail']}`}>
         <h3 className={styles['offer-title']}>{props.offer.name}</h3>
-        <p className={styles['author-name']}> {props.offer.amount}</p>
-        <p className={styles['offer-desc']}>{props.offer.maximumRides}</p>
+        <p className={styles['author-name']}><FormattedMessage id="amount" />: {props.offer.amount}</p>
+        <p className={styles['offer-desc']}><FormattedMessage id="maximumRides" />: {props.offer.maximumRides}</p>
       </div>
       <p className={styles['offer-action']}>
         <a href="#" onClick={props.onDelete}><FormattedMessage id="deleteOffer" /></a>
